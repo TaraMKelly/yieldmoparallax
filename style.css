@@ -1,0 +1,26 @@
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .splitboard {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    width: 100vw;
+    margin-left: calc(((100% - 100vw) / 2) - 8px);
+  }
+  .splitboard-content {
+    position: relative;
+    width: 60%;
+    height: 40vh;
+  }
+  .splitboard-content iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    border: none;
+    pointer-events: none;
+  }
